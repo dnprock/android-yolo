@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:18:1-74:12
+ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:18:1-47:12
 MERGED from [org.tensorflow:tensorflow-android:1.4.0] /Users/phuoc/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.4.0.aar/b003f0729f0fa433681527c77adb3f0d/AndroidManifest.xml:2:1-8:12
 	package
 		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:19:5-34
@@ -41,7 +41,7 @@ INJECTED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android
 		INJECTED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml
 		INJECTED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml
 application
-ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:31:5-72:19
+ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:31:5-45:19
 MERGED from [org.tensorflow:tensorflow-android:1.4.0] /Users/phuoc/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.4.0.aar/b003f0729f0fa433681527c77adb3f0d/AndroidManifest.xml:5:5-6:19
 MERGED from [org.tensorflow:tensorflow-android:1.4.0] /Users/phuoc/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.4.0.aar/b003f0729f0fa433681527c77adb3f0d/AndroidManifest.xml:5:5-6:19
 	android:label
@@ -54,14 +54,14 @@ MERGED from [org.tensorflow:tensorflow-android:1.4.0] /Users/phuoc/.gradle/cache
 		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:31:18-44
 	android:theme
 		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:35:9-45
-activity#org.tensorflow.demo.ClassifierActivity
+activity#org.tensorflow.demo.DetectorActivity
 ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:37:9-44:20
 	android:screenOrientation
 		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:38:19-55
 	android:label
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:39:19-71
+		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:39:19-66
 	android:name
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:37:19-72
+		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:37:19-70
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:40:13-43:29
 action#android.intent.action.MAIN
@@ -72,31 +72,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:42:17-77
 	android:name
 		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:42:27-74
-activity#org.tensorflow.demo.DetectorActivity
-ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:46:9-53:20
-	android:screenOrientation
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:47:19-55
-	android:label
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:48:19-66
-	android:name
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:46:19-70
-activity#org.tensorflow.demo.StylizeActivity
-ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:55:9-62:20
-	android:screenOrientation
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:56:19-55
-	android:label
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:57:19-64
-	android:name
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:55:19-69
-activity#org.tensorflow.demo.SpeechActivity
-ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:64:9-71:20
-	android:screenOrientation
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:65:13-49
-	android:label
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:66:13-57
-	android:name
-		ADDED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:64:19-68
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:18:1-74:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+IMPLIED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:18:1-47:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:18:1-74:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/phuoc/Documents/Workspace/vida_lab/machine_learning/android-yolo/AndroidManifest.xml:18:1-47:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE

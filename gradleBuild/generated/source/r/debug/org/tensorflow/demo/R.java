@@ -65,14 +65,11 @@ public final class R {
     public static final int list_text_item=0x7f060005;
   }
   public static final class string {
-    public static final int activity_name_classification=0x7f070000;
-    public static final int activity_name_detection=0x7f070001;
-    public static final int activity_name_speech=0x7f070002;
-    public static final int activity_name_stylize=0x7f070003;
-    public static final int app_name=0x7f070004;
-    public static final int camera_error=0x7f070005;
-    public static final int description_info=0x7f070006;
-    public static final int request_permission=0x7f070007;
+    public static final int activity_name_detection=0x7f070000;
+    public static final int app_name=0x7f070001;
+    public static final int camera_error=0x7f070002;
+    public static final int description_info=0x7f070003;
+    public static final int request_permission=0x7f070004;
   }
   public static final class style {
     public static final int AppBaseTheme=0x7f080000;

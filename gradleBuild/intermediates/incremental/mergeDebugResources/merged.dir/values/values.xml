@@ -9,10 +9,7 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_tiny">4dp</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
-    <string name="activity_name_classification">TF Classify</string>
     <string name="activity_name_detection">TF Detect</string>
-    <string name="activity_name_speech">TF Speech</string>
-    <string name="activity_name_stylize">TF Stylize</string>
     <string name="app_name">TensorFlow Demo</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
     <string name="description_info">Info</string>
