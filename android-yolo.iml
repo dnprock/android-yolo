@@ -85,7 +85,6 @@
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/build-info" />
-      <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/builds" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/incremental" />
@@ -96,7 +95,9 @@
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/instant-run-support" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/javaPrecompile" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/jniLibs" />
+      <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/lint" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/manifests" />
+      <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/reload-dex" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/rs" />
@@ -104,12 +105,11 @@
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/split-apk" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/splits-support" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/symbols" />
-      <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/gradleBuild/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.tensorflow:tensorflow-android-1.4.0" level="project" />
   </component>

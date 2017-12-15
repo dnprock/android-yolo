@@ -74,8 +74,8 @@ project.ext.TMP_DIR   = project.buildDir.toString() + '/downloads'
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 21
+    buildToolsVersion '27.0.2'
     if (nativeBuildSystem == 'cmake') {
         defaultConfig {
             applicationId = 'org.tensorflow.demo'
@@ -131,8 +131,8 @@ android {
         release.setRoot('build-types/release')
     }
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 23
+        minSdkVersion 21
+        targetSdkVersion 21
     }
     productFlavors {
     }
