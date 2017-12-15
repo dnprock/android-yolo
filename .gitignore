@@ -1,2 +1,3 @@
 .gradle
 gradleBuild/
+.idea/workspace.xml
