@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-package org.tensorflow.demo;
+package co.vidalab.yolo;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -24,8 +24,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
-import org.tensorflow.demo.env.Logger;
-import org.tensorflow.demo.env.SplitTimer;
+import co.vidalab.yolo.env.Logger;
+import co.vidalab.yolo.env.SplitTimer;
 
 /** An object detector that uses TF and a YOLO model to detect objects. */
 public class TensorFlowYoloDetector implements Classifier {

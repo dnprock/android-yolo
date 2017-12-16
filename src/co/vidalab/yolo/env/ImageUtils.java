@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-package org.tensorflow.demo.env;
+package co.vidalab.yolo.env;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;

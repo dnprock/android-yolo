@@ -1,4 +1,4 @@
-package org.tensorflow.demo;
+package co.vidalab.yolo;
 
 import android.app.Activity;
 import android.os.Bundle;

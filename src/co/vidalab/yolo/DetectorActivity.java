@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.tensorflow.demo;
+package co.vidalab.yolo;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -36,12 +36,12 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
-import org.tensorflow.demo.OverlayView.DrawCallback;
-import org.tensorflow.demo.env.BorderedText;
-import org.tensorflow.demo.env.ImageUtils;
-import org.tensorflow.demo.env.Logger;
-import org.tensorflow.demo.tracking.MultiBoxTracker;
-import org.tensorflow.demo.R; // Explicit import needed for internal Google builds.
+import co.vidalab.yolo.OverlayView.DrawCallback;
+import co.vidalab.yolo.env.BorderedText;
+import co.vidalab.yolo.env.ImageUtils;
+import co.vidalab.yolo.env.Logger;
+import co.vidalab.yolo.tracking.MultiBoxTracker;
+import co.vidalab.yolo.R; // Explicit import needed for internal Google builds.
 
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker to detect and then track

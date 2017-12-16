@@ -80,7 +80,7 @@ android {
     buildToolsVersion '25.0.0'
     if (nativeBuildSystem == 'cmake') {
         defaultConfig {
-            applicationId = 'org.tensorflow.demo'
+            applicationId = 'co.vidalab.yolo'
             minSdkVersion 21
             targetSdkVersion 21
             ndk {

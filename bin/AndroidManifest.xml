@@ -16,7 +16,7 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.tensorflow.demo_internal">
+    package="co.vidalab.yolo_internal">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
@@ -33,7 +33,7 @@
         android:icon="@drawable/ic_launcher"
         android:theme="@style/MaterialTheme">
 
-        <activity android:name="org.tensorflow.demo.ClassifierActivity"
+        <activity android:name="co.vidalab.yolo.ClassifierActivity"
                   android:screenOrientation="portrait"
                   android:label="@string/activity_name_classification">
             <intent-filter>
@@ -42,7 +42,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="org.tensorflow.demo.DetectorActivity"
+        <activity android:name="co.vidalab.yolo.DetectorActivity"
                   android:screenOrientation="portrait"
                   android:label="@string/activity_name_detection">
             <intent-filter>
@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="org.tensorflow.demo.StylizeActivity"
+        <activity android:name="co.vidalab.yolo.StylizeActivity"
                   android:screenOrientation="portrait"
                   android:label="@string/activity_name_stylize">
             <intent-filter>
