@@ -16,6 +16,8 @@
 
 package co.vidalab.yolo;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -26,12 +28,23 @@ import android.graphics.Paint.Style;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.media.ImageReader.OnImageAvailableListener;
+import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.annotation.NonNull;
 import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.Surface;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -49,6 +62,8 @@ import co.vidalab.yolo.R; // Explicit import needed for internal Google builds.
  */
 public class DetectorActivity extends CameraActivity implements OnImageAvailableListener {
   private static final Logger LOGGER = new Logger();
+
+  private GoogleSignInClient mGoogleSignInClient;
 
   // Configuration values for the prepackaged multibox model.
   private static final int MB_INPUT_SIZE = 224;
@@ -345,5 +360,32 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   @Override
   public void onSetDebug(final boolean debug) {
     detector.enableStatLogging(debug);
+  }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestEmail()
+            .build();
+    mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+    final Activity selfActivity = this;
+
+    Button logoutButton = (Button)findViewById(R.id.sign_out_button);
+    logoutButton.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        mGoogleSignInClient.signOut()
+            .addOnCompleteListener(selfActivity, new OnCompleteListener<Void>() {
+              @Override
+              public void onComplete(@NonNull Task<Void> task) {
+                Intent loginActivity = new Intent(DetectorActivity.this,
+                        LoginActivity.class);
+                startActivity(loginActivity);
+              }
+            });
+      }
+    });
   }
 }

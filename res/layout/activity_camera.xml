@@ -19,4 +19,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    tools:context="co.vidalab.yolo.CameraActivity" />
+    tools:context="co.vidalab.yolo.CameraActivity" >
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign out" />
+</FrameLayout>
